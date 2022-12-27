@@ -1,0 +1,17 @@
+# Python-project
+#Currency Converter
+#Currency Converter
+currency={"USD":82.81,"EUR":88.18,"INR":1,"CAD":60.75} 
+def convert(c1,a,c2): 
+    if(c2=="INR"):
+        print("The Currency After Converting into %s is"%c2,(amount*currency[c1]))
+    elif(c1=="INR"):
+        print("The Currency After Converting into %s is"%c2,(amount/currency[c2]))
+    else:    
+        print("The Currency After Converting into %s is"%c2,(amount/currency[c1])*currency[c2])
+for i in currency.keys():
+    print(i)
+c1=input("Enter The Currency: ") 
+amount=int(input("Enter The Amount: ")) 
+c2=input("Enter The Currency you want to convert to: ") 
+convert(c1,amount,c2)
